@@ -1,0 +1,262 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    box-sizing: border-box;
+}
+h1,
+h2,
+h3{
+    color: #333;
+}
+
+p{
+    color: #70747a;
+}
+/*Navbar*/
+.navbar-container{
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(90deg, rgba(87,186,241,1) 0%, rgba(60,150,238,1) 67%, rgba(0,138,255,1) 100%);
+    padding: 0 2rem;
+}
+
+nav{
+    position: relative;
+}
+
+
+.logo{
+    width: 80px;
+}
+.navbar-items{
+    position: absolute;
+    right: 0;
+    height: 80px;
+    line-height: 80px;
+    margin: 0;
+    display: inline-block;
+    transition: 0.6s;
+}
+.navbar-items li{
+    display: inline-block;
+    text-transform: uppercase;
+    margin-left: 25px; 
+}
+
+
+.navbar-items a{
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s;
+    font-weight: bold;
+    text-shadow: 1px 1px black;
+    
+}
+
+.navbar-items a:hover{
+    background-color: rgba(0, 1, 2, 0.37);
+    color: white;
+    border-radius: 8px;
+    border-width: 20px ;
+   
+
+}
+
+
+
+/* Main Banner */
+
+.main-banner{
+    background-image: url("../IMG/background.jpg");
+    padding: 10rem 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+    text-transform: uppercase;
+}
+.main-banner h1,
+.main-banner p{
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: #000 3px 2px 3px;
+}
+
+.main-banner h1{
+    font-size: 54px;
+}
+
+.main-banner p{
+    font-size: 32px;
+}
+
+/* contact form */
+.contact-container {
+    text-align: center;
+    padding: 5rem 0 2rem 0;
+  }
+  
+  .contact-container h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+  }
+  
+  .contact-container p {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+  
+  .contact-container input,
+  .contact-container textarea {
+    width: 200px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 0 10px 20px;
+  }
+  
+  .contact-container textarea {
+    display: block;
+    margin: 0 auto 20px;
+    width: 470px;
+    height: 150px;
+  }
+  
+  .contact-container input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    background-color: #5da2f0;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  /* footer */
+  footer {
+    text-align: center;
+    font-weight: bold;
+    margin: 0px;
+  }
+
+
+  /* small laptops a partir de 1100px */
+@media (max-width: 1100px) {
+    .plans-container {
+      width: 95%;
+    }
+  
+    .plan {
+      margin: 0 5px;
+    }
+  }
+  
+  /* tablet 900px */
+  @media (max-width: 900px) {
+    .main-banner p {
+      padding: 0 6rem;
+    }
+
+  
+  /* celular 576px */
+  @media (max-width: 576px) {
+    html,
+    body {
+      overflow-x: hidden;
+    }
+  
+    .navbar-items li {
+      font-size: 12px;
+      margin-left: 10px;
+    }
+    .logo{
+        display: none;
+
+    }
+    .main-banner p {
+      padding: 0 2rem;
+    }
+  
+    .contact-container {
+      padding: 3rem 2rem;
+    }
+  
+    .contact-container input,
+    .contact-container textarea {
+      width: 100%;
+      margin: 10px 0;
+ 
+   }
+   
+  }
+  
+}
+h1{
+  margin: 20px;
+  text-align: center;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #4285f4;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #357ae8;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+.remove-button {
+  padding: 5px 10px;
+  border: none;
+  background-color: #ff5555;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.remove-button:hover {
+  background-color: #cc0000
+}

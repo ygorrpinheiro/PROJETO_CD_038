@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./CSS/style.css">
+    <script src="./js/script.js"></script>
+    <title>Entrada/Saida</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar-container">
+            <nav>
+                
+                <a href="#">
+                    <img src="./IMG/logo.png" alt="Logo" class="logo">
+                </a>
+                
+                <ul class="navbar-items">
+                    <li>
+                        <a href="#">Entrada e Saida</a>
+
+                    </li>
+                    <li>
+                        <a href="./index.html"><i class="fas fa-home"></i></a>
+                    </li>
+            </nav>
+        </div>
+        <main>
+            
+            <h1 class="testeh1">Formulário de Entrada e Saída de Equipamentos</h1>
+            
+            <form id="equipamentoForm">
+                <label for="equipamento">Equipamento:</label>
+                <input type="text" id="equipamento" name="equipamento" required><br>
+              
+                <label for="marca">Marca:</label>
+                <input type="text" id="marca" name="marca" required><br>
+              
+                <label for="modelo">Modelo:</label>
+                <input type="text" id="modelo" name="modelo" required><br>
+              
+                <label for="tipo">Tipo:</label>
+                <input type="text" id="tipo" name="tipo" required><br>
+              
+                <label for="patrimonio">Patrimônio:</label>
+                <input type="text" id="patrimonio" name="patrimonio" required><br>
+              
+                <label for="serie">Série:</label>
+                <input type="text" id="serie" name="serie" required><br>
+              
+                <label for="observacao">Observação:</label>
+                <textarea id="observacao" name="observacao"></textarea><br>
+              
+                <button type="button" onclick="adicionarEquipamento()">Adicionar Equipamento</button>
+              </form>
+
+            <h2>Equipamentos Adicionados:</h2>
+            <table id="equipamentosTable">
+            <thead>
+                <tr>
+                <th>Equipamento</th>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Tipo</th>
+                <th>Patrimônio</th>
+                <th>Série</th>
+                <th>Observação</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+            </table> 
+        </main>
+</body>
+</html>
