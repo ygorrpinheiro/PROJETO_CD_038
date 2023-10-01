@@ -236,12 +236,14 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
+  text-align: center;
 }
 
 th, td {
   border: 1px solid #ccc;
   padding: 10px;
   text-align: left;
+  text-align: center;
 }
 
 th {
