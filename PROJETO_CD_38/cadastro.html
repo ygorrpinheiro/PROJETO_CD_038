@@ -6,7 +6,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./CSS/style.css">
     <script src="./js/script.js"></script>
-    <title>Entrada</title>
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+
+
+    <title>Entrada/Saida</title>
 </head>
 <body>
     <div class="container">
@@ -19,7 +22,7 @@
                 
                 <ul class="navbar-items">
                     <li>
-                        <a href="#">Entrada</a>
+                        <a href="#">Cadastro de Equipamentos</a>
 
                     </li>
                     <li>
@@ -29,21 +32,31 @@
         </div>
         <main>
             
-            <h1>Formulário de Entrada de Equipamentos</h1>
+            <h1>Formulário de Cadastro de Equipamentos</h1>
             
             <form id="equipamentoForm">
-                
-
-                <label for="patrimonioConsulta">Número de Patrimônio:</label>
-                <input type="text" id="patrimonioConsulta" name="patrimonioConsulta" required><br>
-                <label for="patrimonioConsulta">Número de Serie:</label>
-                <input type="text" id="serieConsulta" name="serieConsulta" required><br>    
-                
-
-
-                <button type="button" onclick="consultaEquipamento()">Consulta de Equipamento</button>
-                <a href="./cadastro.html"><button type="button" onclick="cadastroEquipamento()">Cadastro do Equipamento</button></a>
-                    
+                <label for="equipamento">Equipamento:</label>
+                <input type="text" id="equipamento" name="equipamento" required><br>
+              
+                <label for="marca">Marca:</label>
+                <input type="text" id="marca" name="marca" required><br>
+              
+                <label for="modelo">Modelo:</label>
+                <input type="text" id="modelo" name="modelo" required><br>
+              
+                <label for="tipo">Tipo:</label>
+                <input type="text" id="tipo" name="tipo" required><br>
+              
+                <label for="patrimonio">Patrimônio:</label>
+                <input type="text" id="patrimonio" name="patrimonio" required><br>
+              
+                <label for="serie">Série:</label>
+                <input type="text" id="serie" name="serie" required><br>
+              
+                <label for="observacao">Observação:</label>
+                <textarea id="observacao" name="observacao"></textarea><br>
+              
+                <button type="button" onclick="adicionarEquipamento()">Adicionar Equipamento</button>
               </form>
 
             <h2>Equipamentos Adicionados:</h2>

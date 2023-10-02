@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./CSS/style.css">
     <script src="./js/script.js"></script>
-    <title>Entrada</title>
+
+    <title>Entrada/Saida</title>
 </head>
 <body>
     <div class="container">
@@ -19,7 +20,7 @@
                 
                 <ul class="navbar-items">
                     <li>
-                        <a href="#">Entrada</a>
+                        <a href="#">Consulta Estoque</a>
 
                     </li>
                     <li>
@@ -29,20 +30,19 @@
         </div>
         <main>
             
-            <h1>Formulário de Entrada de Equipamentos</h1>
+            <h1>Consulta Estoque</h1>
             
             <form id="equipamentoForm">
                 
-
-                <label for="patrimonioConsulta">Número de Patrimônio:</label>
+                <label for="patrimonioConsulta">Número de Patrimônio para Consulta:</label>
                 <input type="text" id="patrimonioConsulta" name="patrimonioConsulta" required><br>
-                <label for="patrimonioConsulta">Número de Serie:</label>
+                <label for="patrimonioConsulta">Número de Serie para Consulta:</label>
                 <input type="text" id="serieConsulta" name="serieConsulta" required><br>    
-                
+
 
 
                 <button type="button" onclick="consultaEquipamento()">Consulta de Equipamento</button>
-                <a href="./cadastro.html"><button type="button" onclick="cadastroEquipamento()">Cadastro do Equipamento</button></a>
+
                     
               </form>
 
