@@ -1,3 +1,9 @@
+const hamburger = document.querySelector(".hamburger");
+const nav = document.querySelector(".nav");
+
+hamburger.addEventListener("click", () => nav.classList.toggle("active"));
+
+
 function adicionarEquipamento() {
   const equipamentoForm = document.getElementById('equipamentoForm');
   const equipamentoData = new FormData(equipamentoForm);
@@ -98,8 +104,6 @@ function imprimirEtiqueta(equipamento) {
   printWindow.document.close();
 }
 
-
-
   function consultaEquipamento() {
     const patrimonioConsulta = document.getElementById('patrimonioConsulta').value;
     const serieConsulta = document.getElementById('serieConsulta').value;
@@ -134,4 +138,17 @@ function imprimirEtiqueta(equipamento) {
         <td>${equipamentoEncontrado.observacao}</td>
     `;
 
+
 }
+
+//adicione um menu hamburguer responsivo no meu site
+const btnMenuHamburguer = document.querySelector('.btn-menu') 
+function toggleMenu(){
+  if(window.innerWidth <=768){
+    if (btnMenuHamburguer.classList == "btn-menu"){
+      btnMenuHamburguer.classList += "-active"
+      }else{
+        btnMenuHamburguer.classList -= "-active";
+        }}};
+        toggleMenu();
+        
