@@ -141,14 +141,5 @@ function imprimirEtiqueta(equipamento) {
 
 }
 
-//adicione um menu hamburguer responsivo no meu site
-const btnMenuHamburguer = document.querySelector('.btn-menu') 
-function toggleMenu(){
-  if(window.innerWidth <=768){
-    if (btnMenuHamburguer.classList == "btn-menu"){
-      btnMenuHamburguer.classList += "-active"
-      }else{
-        btnMenuHamburguer.classList -= "-active";
-        }}};
-        toggleMenu();
+
         
