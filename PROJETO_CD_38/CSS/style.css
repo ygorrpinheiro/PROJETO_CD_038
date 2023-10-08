@@ -15,16 +15,27 @@ h3{
 p{
     color: #70747a;
 }
+
+button{
+  cursor: pointer;
+}
 /*Navbar*/
 .logo{
   width: 60px;
 
 }
+.logout{
+  appearance: none;
+  background: none;
+  font-size: 1.3rem;
+  border: none;
+  cursor: pointer;
+}
 header{
 background: linear-gradient(90deg, rgba(87,186,241,1) 0%, rgba(60,150,238,1) 67%, rgba(0,138,255,1) 100%);
 padding-inline: 36px;
 }
-
+/*Menu e Responsividade Menu*/
 .nav{
   max-width: 1280px;
   height: 70px;
@@ -32,13 +43,31 @@ padding-inline: 36px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-weight: bold;
 }
 
 .nav-list{
   display: flex;
   gap: 32px;
   list-style: none;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.63);
   
+}
+.nav-list i{
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.63);
+  font-weight: bold;
+  transition: 0.4s;
+
+}
+.nav-list i:hover{
+  color: #333;
+  transition: 0.4s;
+
+}
+.nav-list a:hover{
+  color: #333;
+  transition: 0.4s;
+
 }
 
 .nav-list a{
@@ -49,7 +78,7 @@ padding-inline: 36px;
     padding-block: 16px;
 }
 
-.hamburger{
+.hamburger {
   display: none;
   border: none;
   background: none;
@@ -57,17 +86,21 @@ padding-inline: 36px;
   cursor: pointer;
 }
 
-.hamburger::before,
-.hamburger::after{
+.hamburger::after,
+.hamburger::before {
   content: " ";
   display: block;
   width: 30px;
   height: 3px;
   background: #fff;
   margin-top: 5px;
+  position: relative;
+  transition: 0.3s;
 }
-
-@media (max-width: 750px) {
+.fa{
+  color: white;
+}
+@media (max-width: 785px) {
   .hamburger {
     display: block;
     z-index: 1;
@@ -79,16 +112,21 @@ padding-inline: 36px;
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: #5da2f0d0;
+    background: linear-gradient(90deg, rgba(87,186,241,1) 0%, rgba(60,150,238,1) 67%, rgba(0,138,255,1) 100%);
     clip-path: circle(100px at 90% -15%);
-    transition: 1s ease-out;
-
+    transition: 0.4s ease-out;
+    text-transform: uppercase;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     gap: 0;
-
     pointer-events: none;
+ 
+  }
+  .nav-list a:hover{
+    color: #121314;
+
+
   }
   .main-banner{
     display: none;
@@ -100,15 +138,25 @@ padding-inline: 36px;
   }
 
   .nav-list li:nth-child(1) a {
-    transition: 0.5s 0.2s;
+    transition: 0.3s 0.2s;
   }
 
   .nav-list li:nth-child(2) a {
-    transition: 0.5s 0.4s;
+    transition: 0.1s 0.2s;
   }
 
   .nav-list li:nth-child(3) a {
-    transition: 0.5s 0.6s;
+    transition: 0.2s 0.2s;
+  }
+  .nav-list li:hover{
+    transition: 0.1s;
+  }
+  .nav-list i:hover{
+    transition: 0.1s;
+    color: #0000008e;
+  }
+  footer{
+    display: none;
   }
 
   /* Estilos ativos */
@@ -126,7 +174,7 @@ padding-inline: 36px;
     position: fixed;
     top: 26px;
     right: 16px;
-    border-top-color: transparent;
+    border-top-color:#5da2f0;
   }
 
   .nav.active .hamburger::before {
@@ -257,6 +305,11 @@ padding-inline: 36px;
       margin: 10px 0;
  
    }
+   footer{
+    position: relative !important;
+    
+  }
+    
    
   }
   

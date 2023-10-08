@@ -6,34 +6,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./CSS/style.css">
     <script src="./js/script.js"></script>
-    <title>Entrada</title>
+    <title>Saida</title>
 </head>
 <body>
-    <div class="container">
-        <div class="navbar-container">
-            <nav>
-                
-                <a href="./index.html">
-                    <img src="./IMG/logo.png" alt="Logo" class="logo">
-                </a>
-                
-                <ul class="navbar-items">
-                    <li>
-                        <a href="#">Saida Equipamentos</a>
-
-                    </li>
-                    <li>
-                        <a href="./index.html"><i class="fas fa-home"></i></a>
-                    </li>
+    <header class="header">
+        <nav class="nav">
+                <a href="./index.html"><img src="./IMG/logo.png" alt="Logo" class="logo"></a>
+                  <ul class="nav-list">
+                    <li><a href="#">Saida Equipamentos</a></li>
+                    <li><a href="./index.html"><i class="fas fa-home"></i></a></li>
+                  </ul>
             </nav>
         </div>
+    </header>
         <main>
             
             <h1>Formulário de Saida de Equipamentos</h1>
             
             <form id="equipamentoForm">
-                
-
                 <label for="patrimonioConsulta">Número de Patrimônio:</label>
                 <input type="text" id="patrimonioConsulta" name="patrimonioConsulta" required><br>
                 <label for="serieConsulta">Número de Serie:</label>
@@ -42,12 +32,7 @@
                 <input type="text" id="numChamado" name="numChamado" required><br>    
                 <label for="numFilial">Número Filial:</label>
                 <input type="number" id="numFilial" name="numFilial" required><br>    
-                
-
-
                 <button type="button" onclick="consultaEquipamento()">Saida do Equipamento</button>
-                
-                    
               </form>
 
             <h2>Equipamentos Adicionados:</h2>

@@ -9,41 +9,27 @@
     <title>Entrada</title>
 </head>
 <body>
-    <div class="container">
-        <div class="navbar-container">
-            <nav>
-                
-                <a href="./index.html">
-                    <img src="./IMG/logo.png" alt="Logo" class="logo">
-                </a>
-                
-                <ul class="navbar-items">
-                    <li>
-                        <a href="#">Entrada</a>
-
-                    </li>
-                    <li>
-                        <a href="./index.html"><i class="fas fa-home"></i></a>
-                    </li>
+    <header class="header">
+        <nav class="nav">
+                <a href="./index.html"><img src="./IMG/logo.png" alt="Logo" class="logo"></a>
+                  <ul class="nav-list">
+                    <li><a href="#">Entrada de Equipamentos</a></li>
+                    <li><a href="./index.html"><i class="fas fa-home"></i></a></li>
+                  </ul>
             </nav>
         </div>
+    </header>
         <main>
             
             <h1>Formulário de Entrada de Equipamentos</h1>
             
             <form id="equipamentoForm">
-                
-
                 <label for="patrimonioConsulta">Número de Patrimônio:</label>
                 <input type="text" id="patrimonioConsulta" name="patrimonioConsulta" required><br>
                 <label for="patrimonioConsulta">Número de Serie:</label>
                 <input type="text" id="serieConsulta" name="serieConsulta" required><br>    
-                
-
-
                 <button type="button" onclick="consultaEquipamento()">Consulta de Equipamento</button>
                 <a href="./cadastro.html"><button type="button" onclick="cadastroEquipamento()">Cadastro do Equipamento</button></a>
-                    
               </form>
 
             <h2>Equipamentos Adicionados:</h2>
